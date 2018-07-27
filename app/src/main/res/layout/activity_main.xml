@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_weight="1"/>
+
+    <com.dhunter.common.tablayout.CommonTabLayout
+        android:id="@+id/main_tl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_54dp"
+        android:background="@color/white"
+        tl:tl_iconHeight="@dimen/dimen_23dp"
+        tl:tl_iconWidth="@dimen/dimen_23dp"
+        tl:tl_indicator_color="@color/color_ff7000"
+        tl:tl_indicator_height="0dp"
+        tl:tl_textSelectColor="@color/color_ff7000"
+        tl:tl_textUnselectColor="@color/color_9b9b9b"
+        tl:tl_textsize="@dimen/small"
+        tl:tl_underline_color="@color/color_9b9b9b"
+        tl:tl_underline_height="@dimen/dimen_1dp"/>
+</LinearLayout>

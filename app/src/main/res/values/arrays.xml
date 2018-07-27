@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_tab_select">
+        <item>首页</item>
+        <item>发现</item>
+        <item>数据</item>
+        <item>合集</item>
+        <item>我的</item>
+    </string-array>
+
+    <string-array name="find_tab_title">
+        <item>国际新闻</item>
+        <item>国内新闻</item>
+        <item>移动互联</item>
+        <item>体育新闻</item>
+        <item>科技新闻</item>
+    </string-array>
+</resources>

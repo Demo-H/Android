@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Android</string>
+    <!-- Common -->
+    <string name="search_tip">搜索</string>
+    <string name="home_page">首页</string>
+    <string name="find">发现</string>
+    <string name="data">数据</string>
+    <string name="collection">合集</string>
+    <string name="about_me">我的</string>
+    <string name="get_permission">获取权限</string>
+    <string name="next">下一步</string>
+    <string name="submit">提交</string>
+
+    <!-- Login -->
+    <string name="input_user_name">请输入用户名</string>
+    <string name="input_phone_number">请输入手机号码</string>
+    <string name="input_password">请输入密码</string>
+    <string name="login">登录</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="register_new">注册新用户</string>
+    <string name="forget_password_tip">使用您的手机号找回密码，验证码将通过短信发到您的手机上</string>
+    <string name="input_sms_code">请输入验证码</string>
+    <string name="input_new_password">请输入新密码</string>
+    <string name="input_new_password_again">请确认新密码</string>
+    <string name="not_input_phone_number">手机号码未填写</string>
+    <string name="not_match_phone_number">请输入正确的手机号码</string>
+    <string name="password_not_equal">两次密码不相同</string>
+    <string name="send_sms_code">获取验证码</string>
+    <string name="input_invite_code">请输入邀请码</string>
+    <string name="register_new_user">注册新用户</string>
+    <!-- -->
+
+</resources>

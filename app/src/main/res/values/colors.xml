@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- app -->
+    <color name="app_background">#f3f2ef</color>
+
+    <color name="statusbar_grayness">#f0f0f0</color>
+    <color name="color_b7b7b7">#b7b7b7</color>
+    <color name="color_2c2c2c">#2c2c2c</color>
+    <color name="color_f2f2f2">#f2f2f2</color>
+    <color name="color_b24e00">#b24e00</color>
+    <color name="color_404040">#404040</color>
+    <color name="color_b0b8b2">#b0b8b2</color>
+    <color name="color_c5c5c5">#c5c5c5</color>
+</resources>
