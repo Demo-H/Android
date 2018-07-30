@@ -5,7 +5,6 @@ import com.dhunter.android.entity.login.LoginRequest;
 
 import io.reactivex.Observable;
 import retrofit2.http.Body;
-import retrofit2.http.Field;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.Query;
@@ -18,7 +17,7 @@ public interface LoginService {
 
     /** 登录接口 **/
     @POST("login")
-    Observable<BaseResponse> login(@Field("mobile")String mobile, @Field("code")String code);
+    Observable<BaseResponse> login(@Body LoginRequest request);
 
     /** 发送获取验证码 **/
     @GET("smscode")

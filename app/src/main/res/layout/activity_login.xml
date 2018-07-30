@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
-        android:layout_marginTop="@dimen/dimen_80dp"
+        android:layout_marginTop="@dimen/dimen_160dp"
         android:background="@null"
         android:scaleType="centerCrop"
         android:src="@mipmap/default_head"/>
@@ -22,7 +22,7 @@
         android:id="@+id/user_name"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen_38dp"
-        android:layout_marginTop="@dimen/dimen_200dp"
+        android:layout_marginTop="@dimen/dimen_280dp"
         android:maxLength="11"
         android:layout_marginLeft="@dimen/dimen_36dp"
         android:layout_marginRight="@dimen/dimen_36dp"

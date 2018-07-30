@@ -1,6 +1,7 @@
 package com.dhunter.android.ui.presenter;
 
 import com.dhunter.android.entity.BaseResponse;
+import com.dhunter.android.entity.login.LoginRequest;
 import com.dhunter.android.http.LoginDataManager;
 import com.dhunter.android.ui.contract.LoginContract;
 import com.dhunter.common.base.BasePresenter;
@@ -25,7 +26,7 @@ public class LoginPresenter extends BasePresenter implements LoginContract.Prese
     }
 
     @Override
-    public void login(String mobile, String psw) {
+    public void login(LoginRequest request) {
         addDisposabe(mDataManager.login(new ErrorDisposableObserver<BaseResponse>() {
             @Override
             public void onNext(BaseResponse response) {
@@ -44,6 +45,6 @@ public class LoginPresenter extends BasePresenter implements LoginContract.Prese
             public void onComplete() {
 
             }
-        }, mobile, psw));
+        }, request));
     }
 }

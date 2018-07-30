@@ -1,6 +1,6 @@
 package com.dhunter.android.ui.module;
 
-import com.dhunter.android.http.MainDataManager;
+import com.dhunter.android.http.LoginDataManager;
 import com.dhunter.android.ui.contract.LoginContract;
 
 import dagger.Module;
@@ -13,15 +13,15 @@ import dagger.Provides;
 @Module
 public class LoginPresenterModule {
     private LoginContract.View mView;
-    private MainDataManager mDataManager;
+    private LoginDataManager mDataManager;
 
-    public LoginPresenterModule(LoginContract.View view, MainDataManager mainDataManager) {
+    public LoginPresenterModule(LoginContract.View view, LoginDataManager mainDataManager) {
         this.mView = view;
         this.mDataManager = mainDataManager;
     }
 
     @Provides
-    MainDataManager providerMainDataManager() {
+    LoginDataManager providerLoginDataManager() {
         return mDataManager;
     }
 

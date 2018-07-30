@@ -1,6 +1,7 @@
 package com.dhunter.android.ui.contract;
 
 import com.dhunter.android.entity.BaseResponse;
+import com.dhunter.android.entity.login.LoginRequest;
 
 /**
  * Created by dhunter on 2018/6/25.
@@ -14,6 +15,6 @@ public class LoginContract {
     }
 
     public interface Presenter {
-        void login(String mobile, String psw);
+        void login(LoginRequest request);
     }
 }

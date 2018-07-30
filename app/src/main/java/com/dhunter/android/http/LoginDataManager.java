@@ -28,8 +28,8 @@ public class LoginDataManager extends BaseDataManager {
      *验证短信验证码注册/登陆 （只做示例，无数据返回）
      **/
 
-    public Disposable login(DisposableObserver<BaseResponse> consumer, String mobile, String verifyCode) {
-        Observable observable = getService(LoginService.class).login(mobile, verifyCode);
+    public Disposable login(DisposableObserver<BaseResponse> consumer, LoginRequest request) {
+        Observable observable = getService(LoginService.class).login(request);
         return changeIOToMainThread(observable, consumer);
     }
 

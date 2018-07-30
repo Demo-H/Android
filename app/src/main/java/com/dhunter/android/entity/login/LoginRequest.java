@@ -7,6 +7,7 @@ package com.dhunter.android.entity.login;
 public class LoginRequest {
 
     private String phone;
+    private String pwd;
     private String code;
     private String newPwd;
     private String againPwd;
@@ -18,6 +19,14 @@ public class LoginRequest {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public String getPwd() {
+        return pwd;
+    }
+
+    public void setPwd(String pwd) {
+        this.pwd = pwd;
     }
 
     public String getCode() {
