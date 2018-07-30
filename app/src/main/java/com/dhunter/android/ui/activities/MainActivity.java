@@ -8,8 +8,8 @@ import com.dhunter.android.adapter.MainPagerAdapter;
 import com.dhunter.android.base.BaseActivity;
 import com.dhunter.android.base.BaseFragment;
 import com.dhunter.android.entity.TabEntity;
-import com.dhunter.android.ui.fragment.CollectionFragment;
-import com.dhunter.android.ui.fragment.DataFragment;
+import com.dhunter.android.ui.fragment.ShopCartFragment;
+import com.dhunter.android.ui.fragment.ClassificationFragment;
 import com.dhunter.android.ui.fragment.FindFragment;
 import com.dhunter.android.ui.fragment.HomeFragment;
 import com.dhunter.android.ui.fragment.MeFragment;
@@ -39,18 +39,18 @@ public class MainActivity extends BaseActivity {
 
     private HomeFragment mHomeFragment;
     private FindFragment mFindFragment;
-    private DataFragment mDataFragment;
-    private CollectionFragment mCollectionFragment;
+    private ClassificationFragment mClassificationFragment;
+    private ShopCartFragment mShopCartFragment;
     private MeFragment mMeFragment;
     private List<BaseFragment> fragments = new ArrayList<>();
     private ArrayList<CustomTabEntity> mTabEntities = new ArrayList<>();
-    private String[] mTitles = {"首页", "发现", "数据", "合集", "我的"};
+    private String[] mTitles = {"首页", "分类", "发现", "购物车", "我的"};
     private int[] mIconUnselectIds = {
-            R.mipmap.nav_home_normal_ic, R.mipmap.nav_find_normal_ic,
-            R.mipmap.nav_data_normal_ic, R.mipmap.nav_coll_normal_ic, R.mipmap.nav_me_normal_ic};
+            R.mipmap.nav_home_normal_ic,R.mipmap.nav_classification_normal_ic,  R.mipmap.nav_find_normal_ic,
+            R.mipmap.nav_shopcart_normal_ic, R.mipmap.nav_me_normal_ic};
     private int[] mIconSelectIds = {
-            R.mipmap.nav_home_selected_ic, R.mipmap.nav_find_selected_ic,
-            R.mipmap.nav_data_selected_ic, R.mipmap.nav_coll_selected_ic, R.mipmap.nav_me_selected_ic};
+            R.mipmap.nav_home_selected_ic, R.mipmap.nav_classification_selected_ic, R.mipmap.nav_find_selected_ic,
+            R.mipmap.nav_shopcart_selected_ic, R.mipmap.nav_me_selected_ic};
 
 
     @Override
@@ -137,14 +137,14 @@ public class MainActivity extends BaseActivity {
 
     private void setFragments() {
         mHomeFragment = new HomeFragment();
+        mClassificationFragment = new ClassificationFragment();
         mFindFragment = new FindFragment();
-        mDataFragment = new DataFragment();
-        mCollectionFragment = new CollectionFragment();
+        mShopCartFragment = new ShopCartFragment();
         mMeFragment = new MeFragment();
         fragments.add(mHomeFragment);
+        fragments.add(mClassificationFragment);
         fragments.add(mFindFragment);
-        fragments.add(mDataFragment);
-        fragments.add(mCollectionFragment);
+        fragments.add(mShopCartFragment);
         fragments.add(mMeFragment);
     }
 

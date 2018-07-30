@@ -15,7 +15,7 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:textColor="@color/white"
-            android:text="@string/data" />
+            android:text="@string/classification" />
     </LinearLayout>
 
 </LinearLayout>

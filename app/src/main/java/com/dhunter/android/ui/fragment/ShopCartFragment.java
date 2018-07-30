@@ -15,7 +15,7 @@ import butterknife.ButterKnife;
  * Created by dhunter on 2018/6/25.
  */
 
-public class DataFragment extends BaseFragment {
+public class ShopCartFragment extends BaseFragment {
 
     private View rootView = null;
 
@@ -41,6 +41,6 @@ public class DataFragment extends BaseFragment {
 
     @Override
     public int getLayoutId() {
-        return R.layout.fragment_data;
+        return R.layout.fragment_shopcart;
     }
 }
