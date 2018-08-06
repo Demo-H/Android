@@ -9,7 +9,7 @@ import com.dhunter.android.entity.HomeIndex;
 public class HomeContract {
 
     public interface View {
-        void showToast(String string);
+        void toast(String string);
         void setNormalView();
         void setNetErrorView();
         void reLogin();

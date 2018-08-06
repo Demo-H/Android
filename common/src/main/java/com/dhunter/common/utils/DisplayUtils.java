@@ -78,6 +78,8 @@ public class DisplayUtils {
      * 屏幕宽度
      */
     public static int getScreenWidthPixels(Context context) {
+        if(context == null)
+            return 0;
         return context.getResources().getDisplayMetrics().widthPixels;
     }
 
@@ -85,6 +87,8 @@ public class DisplayUtils {
      * 屏幕高度
      */
     public static int getScreenHeightPixels(Context context) {
+        if(context == null)
+            return 0;
         return context.getResources().getDisplayMetrics().heightPixels;
     }
 

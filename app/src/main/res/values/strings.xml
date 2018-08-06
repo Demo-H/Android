@@ -30,4 +30,8 @@
     <string name="register_new_user">注册新用户</string>
     <!-- -->
 
+    <!-- 首页 -->
+    <string name="scan_to_scan">扫一扫</string>
+    <string name="msg">消息</string>
+
 </resources>

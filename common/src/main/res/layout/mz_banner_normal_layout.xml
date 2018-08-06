@@ -3,12 +3,12 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
-     <com.android.dhunter.common.widget.mzBannerView.CustomViewPager
+     <com.dhunter.common.widget.bannerView.CustomViewPager
          android:id="@+id/mzbanner_vp"
          android:layout_width="match_parent"
          android:layout_height="wrap_content">
 
-     </com.android.dhunter.common.widget.mzBannerView.CustomViewPager>
+     </com.dhunter.common.widget.bannerView.CustomViewPager>
      <RelativeLayout
          android:layout_width="match_parent"
          android:layout_height="wrap_content"

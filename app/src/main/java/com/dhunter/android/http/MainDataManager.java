@@ -1,11 +1,9 @@
 package com.dhunter.android.http;
 
-import com.dhunter.android.http.api.MainApiService;
 import com.dhunter.common.network.DataManager;
 
-import io.reactivex.disposables.Disposable;
-import io.reactivex.observers.DisposableObserver;
-import okhttp3.ResponseBody;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by dhunter on 2018/6/25.
@@ -22,5 +20,13 @@ public class MainDataManager extends BaseDataManager {
     }
 
 
+    public List<String> getTypeOfNameData(){
+        ArrayList<String> list = new ArrayList<>(20);
+        for (int i = 0; i < 20; i++) {
+            char c = (char)(i + 65);
+            list.add("分类物品" + c);
+        }
+        return list;
+    }
 
 }
